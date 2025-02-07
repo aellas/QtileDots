@@ -1,5 +1,4 @@
 import os
-from colors import *
 
 from libqtile import bar, layout, qtile, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen, ScratchPad, DropDown
@@ -121,7 +120,7 @@ widget_defaults = dict(
     font="Ubuntu Nerd Font Bold",
     fontsize=14,
     padding=3,
-    foreground=foreground,
+    foreground="#ffffff",
 )
 extension_defaults = widget_defaults.copy()
 
@@ -227,7 +226,7 @@ screens = [
                 ),
             ],
             40,
-            background = background,
+            background = "#0B0C0F",
             opacity = 1.0,
             margin = [6,6,0,6]
         ),
