@@ -8,8 +8,8 @@
 </a>
 </div>
 
-This repository contains my configuration files for the Qtile window manager.
-You can use `setup.sh` to automatically setup the symlinks.
+<p align=center> This repository contains my configuration files for the Qtile window manager </p>
+<p align=center> You can use `setup.sh` to automatically setup the symlinks </p>
 
 ## Software
  - Distro: [CachyOS](https://cachyos.org/)
