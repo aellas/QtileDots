@@ -12,7 +12,7 @@
 <p align="center"> You can use setup.sh to automatically setup the symlinks </p>
 
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > If you use this repo, make sure you edit `dotfiles/qtile/autostart.sh` and set `xrandr` to your monitor settings
 
 ## Software
