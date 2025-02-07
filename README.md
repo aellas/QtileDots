@@ -10,8 +10,8 @@
 
 <p align="center"> This repository contains my configuration files for the Qtile window manager </p>
 <p align="center"> You can use setup.sh to automatically setup the symlinks </p>
-
-If you use these repo, make sure you edit `dotfiles/qtile/autostart.sh` and set `xrandr` to your monitor settings
+[!IMPORTANT]
+> If you use this repo, make sure you edit `dotfiles/qtile/autostart.sh` and set `xrandr` to your monitor settings
 
 ## Software
 
