@@ -10,8 +10,6 @@
 This repository contains my configuration files for the Qtile window manager. I use Symlinks to help manage them. 
 
 
-![preview](preview/preview.png?raw=true)
-
  - Distro: [CachyOS](https://cachyos.org/)
  - WM: [Qtile](https://qtile.org/)
  - Compositor: [Jonaburg-Picom](https://github.com/jonaburg/picom)
@@ -38,5 +36,8 @@ This repository contains my configuration files for the Qtile window manager. I 
 | Mod + B                               | Open Web Browser                                                                     |
 | Mod + N                               | Open TUI Filemanager                                                                 |
 | Home                                  | Take Full Screen Screenshot                                                          |
+
+## Screenshot
+![preview](preview/preview.png?raw=true)
 
 
