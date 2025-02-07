@@ -1,8 +1,8 @@
 # <p align=center> ​🇶​​🇹​​🇮​​🇱​​🇪​​🇩​​🇴​​🇹​​🇸​ </p>
 <div  align="center">
   
-![](https://img.shields.io/github/stars/aellas/qtiledots?style=for-the-badge&logo=starship&color=83c5be&logoColor=D9E0EE&labelColor=252733)
-![](https://img.shields.io/github/last-commit/jR4dh3y/qtiledots?&style=for-the-badge&color=006d77&logoColor=D9E0EE&labelColor=252733)
+![](https://img.shields.io/github/stars/aellas/QtileDots?style=for-the-badge&logo=starship&color=83c5be&logoColor=D9E0EE&labelColor=252733)
+![](https://img.shields.io/github/last-commit/aellas/QtileDots?&style=for-the-badge&color=006d77&logoColor=D9E0EE&labelColor=252733)
 <a href="https://github.com/jR4dh3y/qtiledots/blob/main/LICENSE">
 <img alt="License" src="https://img.shields.io/github/license/h1tarxeth/Dots?style=for-the-badge&logo=starship&color=1d3557&logoColor=D9E0EE&labelColor=252733" />
 </a>
