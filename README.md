@@ -10,7 +10,7 @@
 
 This repository contains my configuration files for the Qtile window manager. I use Symlinks to help manage them. 
 
-
+## Software
  - Distro: [CachyOS](https://cachyos.org/)
  - WM: [Qtile](https://qtile.org/)
  - Compositor: [Jonaburg-Picom](https://github.com/jonaburg/picom)
