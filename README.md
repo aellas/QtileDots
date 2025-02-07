@@ -1,5 +1,6 @@
 # <p align=center> My Dots </p>
-This is my personal backup of my dotfiles, I also use Symlinks to manage them.  
+This is my personal backup of my dotfiles
+
 ![preview](preview/preview.png?raw=true)
 
  - Distro: [CachyOS](https://cachyos.org/)
