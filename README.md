@@ -7,6 +7,8 @@
 <img alt="License" src="https://img.shields.io/github/license/h1tarxeth/Dots?style=for-the-badge&logo=starship&color=1d3557&logoColor=D9E0EE&labelColor=252733" />
 </a>
 </div>
+This repository contains my configuration files for the [Qtile](http://www.qtile.org/) window manager. I use [Symlinks](https://en.wikipedia.org/wiki/Symbolic_link) to help manage it. 
+
 
 ![preview](preview/preview.png?raw=true)
 
