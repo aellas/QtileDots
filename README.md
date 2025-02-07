@@ -1,5 +1,12 @@
 # <p align=center> ​🇶​​🇹​​🇮​​🇱​​🇪​​🇩​​🇴​​🇹​​🇸​ </p>
-<p align=center>My personal Qtile dotfiles that I use daily and couldn't live without</p>
+<div  align="center">
+  
+![](https://img.shields.io/github/stars/jR4dh3y/qtiledots?style=for-the-badge&logo=starship&color=83c5be&logoColor=D9E0EE&labelColor=252733)
+![](https://img.shields.io/github/last-commit/jR4dh3y/qtiledots?&style=for-the-badge&color=006d77&logoColor=D9E0EE&labelColor=252733)
+<a href="https://github.com/jR4dh3y/qtiledots/blob/main/LICENSE">
+<img alt="License" src="https://img.shields.io/github/license/h1tarxeth/Dots?style=for-the-badge&logo=starship&color=1d3557&logoColor=D9E0EE&labelColor=252733" />
+</a>
+</div>
 
 ![preview](preview/preview.png?raw=true)
 
