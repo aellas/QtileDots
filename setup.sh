@@ -11,3 +11,6 @@ ln -s $HOME/dotfiles/dunst ~/.config
 ln -s $HOME/dotfiles/fastfetch ~/.config
 ln -s $HOME/dotfiles/myfetch ~/.config
 ln -s $HOME/dotfiles/nvim ~/.config
+ln -s $HOME/dotfiles/lf ~/.config
+ln -s $HOME/dotfiles/fish ~/.config
+ln -s $HOME/dotfiles/zellij ~/.config

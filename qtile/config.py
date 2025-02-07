@@ -9,7 +9,7 @@ from functions import smart_swap
 mod = "mod4"
 terminal = "kitty"
 webBrowser = "brave"
-fileExplorer = "nemo"
+fileExplorer = "kitty lf"
 appLauncher = "rofi -show drun"
 screenshotFull = "flameshot full --clipboard --path /home/array/Pictures/Screenshots"
 prismLauncher = "prismlauncher"

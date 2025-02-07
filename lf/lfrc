@@ -1,0 +1,25 @@
+
+# Basic vars
+
+set previewer ~/.config/lf/previewer
+set cleaner ~/.config/lf/cleaner
+
+# Keybindings
+map j down
+map k up
+map h updir
+map l open
+map gg top
+map G bottom
+map y yank
+map p paste
+map d delete
+map r rename
+map q quit
+map ? fish
+map v !extract.sh "$f"
+map , !newfile.sh
+map . !newdir.sh
+
+# Options
+set shell fish
