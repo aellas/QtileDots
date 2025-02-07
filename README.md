@@ -7,6 +7,7 @@
 <img alt="License" src="https://img.shields.io/github/license/h1tarxeth/Dots?style=for-the-badge&logo=starship&color=1d3557&logoColor=D9E0EE&labelColor=252733" />
 </a>
 </div>
+
 This repository contains my configuration files for the Qtile window manager. I use Symlinks to help manage them. 
 
 
@@ -26,7 +27,7 @@ This repository contains my configuration files for the Qtile window manager. I 
  - Image Viewer: [Feh](https://feh.finalrewind.org/)
  - Media Player: [mpv](https://github.com/mpv-player/mpv)
 
-### Main key bindings
+## Main key bindings
 
 | Keybind                               | Description                                                                          |
 | ------------------------------------- | ------------------------------------------------------------------------------------ |
