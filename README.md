@@ -1,10 +1,15 @@
 # <p align=center> ​🇶​​🇹​​🇮​​🇱​​🇪​​🇩​​🇴​​🇹​​🇸​ </p>
-
-
+<div  align="center">
+  
+![](https://img.shields.io/github/stars/aellas/QtileDots?style=for-the-badge&logo=starship&color=83c5be&logoColor=D9E0EE&labelColor=252733)
+![](https://img.shields.io/github/last-commit/aellas/QtileDots?&style=for-the-badge&color=006d77&logoColor=D9E0EE&labelColor=252733)
+<a href="https://github.com/jR4dh3y/qtiledots/blob/main/LICENSE">
+<img alt="License" src="https://img.shields.io/github/license/h1tarxeth/Dots?style=for-the-badge&logo=starship&color=1d3557&logoColor=D9E0EE&labelColor=252733" />
+</a>
+</div>
 <p align=center> This repository contains my configuration files for the Qtile window manager </p>
 <p align=center> You can use setup.sh to automatically setup the symlinks </p>
-> [!IMPORTANT]  
-> If you use these repo, make sure you edit `dotfiles/qtile/autostart.sh` and set `xrandr` to your monitor settings
+<p align=center>  If you use these repo, make sure you edit `dotfiles/qtile/autostart.sh` and set `xrandr` to your monitor settings </p>
 
 ## Software
  - Distro: [CachyOS](https://cachyos.org/)
