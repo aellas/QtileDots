@@ -9,7 +9,7 @@
 </div>
 
 **<p align="center"> This repository contains my configuration files for the Qtile window manager </p>**
-**`<p align="center"> This repository contains my configuration files for the Qtile window manager </p>`**
+<p align="center"> You can use <code>setup.sh</code> to automatically setup the symlinks </p>
 
 ## Software
 
