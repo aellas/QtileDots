@@ -29,7 +29,6 @@
  - Media Player: [mpv](https://github.com/mpv-player/mpv)
 
 ## Main Key Binds
-> Mod = Windows Key
 | Keybind                               | Description                                                                          |
 | ------------------------------------- | ------------------------------------------------------------------------------------ |
 | Mod + Enter                           | Open Terminal                                                                        |
