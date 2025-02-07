@@ -18,3 +18,16 @@ This is my personal backup of my dotfiles
  - Notification: [Dunst](https://github.com/dunst-project/dunst)
  - Image Viewer: [Feh](https://feh.finalrewind.org/)
  - Media Player: [mpv](https://github.com/mpv-player/mpv)
+
+### Main key bindings
+
+| Keybind                               | Description                                                                          |
+| ------------------------------------- | ------------------------------------------------------------------------------------ |
+| Mod + Enter                           | Open Terminal                                                                        |
+| Mod + Space                           | Open Rofi                                                                            |
+| Mod + Shift + R                       | Reload Qtile                                                                         |
+| Mod + B                               | Open Web Browser                                                                     |
+| Mod + N                               | Open TUI Filemanager                                                                 |
+| Home                                  | Take Full Screen Screenshot                                                          |
+
+
