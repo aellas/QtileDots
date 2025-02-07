@@ -36,7 +36,7 @@ keys = [
     Key([mod], "p", lazy.spawn(prismLauncher), desc="Launch prism launcher"), # prism launcher 
     Key([mod], "c", lazy.spawn(gpick), desc="Launch gpick"), # gpick
     Key([mod], "s", lazy.spawn(steam), desc="Launch steam"), # steam
-    Key([mod], "p", lazy.spawn(github), desc="Launch Github"), # gemini
+    #Key([mod], "p", lazy.spawn(github), desc="Launch Github"), # gemini
     Key([mod], "g", lazy.spawn(gemini), desc="Launch gemini"), # gemini
     Key([], "Home", lazy.spawn(screenshotFull), desc="Take a screenshot"), # flameshot
 
@@ -51,7 +51,7 @@ keys = [
     Key([mod], "f", lazy.window.toggle_fullscreen(), desc="Toggle fullscreen on the focused window"), # toggle fullscreen
     Key([mod], "f", lazy.window.toggle_floating(), desc="Toggle floating on the focused window"), # toggle floating
     Key([mod, "shift"], "q", lazy.shutdown(), desc="Logout"), # logout
-    Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"), # reload qtile
+    Key([mod, "shift"], "r", lazy.reload_config(), desc="Reload the config"), # reload qtile
     Key([mod], "q", lazy.window.kill()), # kill focused window
     Key([mod, "shift"], "m", lazy.window.toggle_maximize(), desc="Toggle maximize"),
 
@@ -68,12 +68,12 @@ mouse = [
 
 
 group_labels = {
-        "1": "",
-        "2": "",
+        "1": "",
+        "2": "",
         "3": "󰝚",
         "4": "󰵅",
         "5": "󰊖",
-        "6": "󰄀"
+        "6": ""
 }
 
 
@@ -87,7 +87,7 @@ for i in groups:
     )
 
 layouts = [
-    layout.MonadTall(border_width=2, border_focus="#C9C0C9", border_normal="#494E5E", margin=6, fair=True),
+    layout.MonadTall(border_width=2, border_focus="#C9C0C9", border_normal="#0B0C0F", margin=6, fair=True),
 ]
 
 
@@ -183,6 +183,7 @@ screens = [
                 widget.Systray(
                     background="#0B0C0F",
                     icon_size=17,
+                    padding = 6,
                 ),
                 widget.Spacer(
                     length=15,
@@ -251,6 +252,8 @@ floating_layout = layout.Floating(
         Match(wm_class="ssh-askpass"),  # ssh-askpass
         Match(title="branchdialog"),  # gitk
         Match(title="pinentry"),
+        Match(wm_class="feh"),
+
  # gitk
     ]
 )
