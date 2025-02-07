@@ -8,7 +8,7 @@
   </a>
 </div>
 
-<p align="center"> This repository contains my configuration files for the Qtile window manager </p>
+**<p align="center"> This repository contains my configuration files for the Qtile window manager </p>**
 
 ## Software
 
