@@ -1,5 +1,5 @@
 # <p align=center> ​🇶​​🇹​​🇮​​🇱​​🇪​​🇩​​🇴​​🇹​​🇸​ </p>
-<p align=center>My personal Qtile dotfiles that I use daily</p>
+<p align=center>My personal Qtile dotfiles that I use daily and couldn't live without</p>
 
 ![preview](preview/preview.png?raw=true)
 
