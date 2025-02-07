@@ -1,5 +1,5 @@
-# <p align=center> My Dots </p>
-This is my personal backup of my dotfiles
+# <p align=center> QtileDots </p>
+<p align=center>My personal Qtile dotfiles that I use daily</p>
 
 ![preview](preview/preview.png?raw=true)
 
