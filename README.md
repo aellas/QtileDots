@@ -43,3 +43,7 @@
 ## Screenshot
 
 ![preview](preview/preview.png?raw=true)
+
+## Credits
+- [Bitterhalt](https://github.com/bitterhalt) - For tons of inspiration 
+- [TheLinuxCast](https://gitlab.com/thelinuxcast) - For coverage on Qtile + Supplying the symlinks bash script <3 
