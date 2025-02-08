@@ -46,4 +46,5 @@
 
 ## Credits
 - [Bitterhalt](https://github.com/bitterhalt) - For tons of inspiration 🐐
-- [TheLinuxCast](https://gitlab.com/thelinuxcast) - For coverage on Qtile + Supplying the symlinks bash script <3 
+- [TheLinuxCast](https://gitlab.com/thelinuxcast) - For coverage on Qtile + Supplying the symlinks bash script <3
+- [CachyOS](https://cachyos.org/) - For the preconfigured Qtile dots that helped me start my journey with Qtile
