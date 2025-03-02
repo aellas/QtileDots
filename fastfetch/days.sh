@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the start date
-start_date="2025-02-05"
+start_date="2025-02-18"
 
 # Get current date
 today=$(date +%Y-%m-%d)

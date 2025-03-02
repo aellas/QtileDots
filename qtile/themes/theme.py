@@ -16,7 +16,7 @@ theme1 = { #custom
     "this_current_screen_border": "#D3C9D2",
     "urgent_border": "#D3C9D2",
     "urgent_text": "#0F1014",
-    "wallpaper": "/home/array/.config/qtile/themes/wallpapers/orange.jpg",
+    "wallpaper": "/home/$USER/.config/qtile/themes/wallpapers/orange.jpg",
     "gtk_theme": "Space-dark",
     "kitty_theme": "default.conf",
 }
@@ -34,7 +34,7 @@ theme2 = { #catpuccin-mocha
     "this_current_screen_border": "#CAD3F5",
     "urgent_border": "#ff5555",
     "urgent_text": "#282828",
-    "wallpaper": "/home/array/.config/qtile/themes/wallpapers/koi.jpg",
+    "wallpaper": "/home/$USER/.config/qtile/themes/wallpapers/koi.jpg",
     "kitty_theme": "mocha.conf",
 }
 
@@ -51,7 +51,7 @@ theme3 = { # eink
     "this_current_screen_border": "#3A3A3A",
     "urgent_border": "#FEFEFE",
     "urgent_text": "#3A3A3A",
-    "wallpaper": "/home/array/.config/qtile/themes/wallpapers/as.png",
+    "wallpaper": "/home/$USER/.config/qtile/themes/wallpapers/as.png",
     "gtk_theme": "Graphite-Light",
     "kitty_theme": "eink.conf",
 }
@@ -69,7 +69,7 @@ theme4 = { # Gruvbox
     "this_current_screen_border": "#98971A",
     "urgent_border": "#ff5555",
     "urgent_text": "#282828",
-    "wallpaper": "/home/array/.config/qtile/themes/wallpapers/4.png",
+    "wallpaper": "/home/$USER/.config/qtile/themes/wallpapers/4.png",
     "kitty_theme": "gruvbox.conf",
 }
 theme5 = {
@@ -85,7 +85,7 @@ theme5 = {
     "this_current_screen_border": "#A6ACCD",
     "urgent_border": "#ff5555",
     "urgent_text": "#282828",
-    "wallpaper": "/home/array/.config/qtile/themes/wallpapers/ocean.jpg",
+    "wallpaper": "/home/$USER/.config/qtile/themes/wallpapers/ocean.jpg",
     "kitty_theme": "pomi.conf",
 }
 if 'current_theme' not in globals():

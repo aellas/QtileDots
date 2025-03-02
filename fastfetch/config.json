@@ -1,51 +1,61 @@
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-        "type": "small"
+        "type": "none"
+        //"source": ".config/fastfetch/fastfetch.png"
     },
+    
     "display": {
         "separator": ""
     },
     "modules": [
+
         {
-            "key": "{#34}~ fastfetch",
+            "key": " {#32}~ fastfetch",
             "type": "custom"
         },
+
         {
-            "key": "{#36}OS  ",
+            "key": " {#36}Distro ",
             "type": "os",
             "keyColor": "white"
         },
         {
-            "key": "{#36}KER ",
+            "key": " {#36}Kernel ",
             "type": "kernel",
             "keyColor": "white"
         },
         {
-            "key": "{#36}WM  ",
+            "key": " {#36}WM/DE ",
             "type": "wm",
             "keyColor": "white"
         },
         {
-            "key": "{#36}PKG ",
+            "key": " {#36}Packages ",
             "type": "packages",
             "keyColor": "white"
         },
         {
-            "key": "{#36}UP  ",
+            "key": " {#36}Terminal ",
+            "type": "terminal",
+            "keyColor": "white"
+        },
+        {
+            "key": " {#36}Shell ",
+            "type": "shell",
+            "keyColor": "white"
+        },
+        {
+            "key": " {#36}Uptime ",
             "type": "uptime",
             "keyColor": "white"
         },
         {
             "type": "command",
-            "key": "{#36}DAY ",
+            "key": " {#36}Day ",
             "text": "bash ~/.config/fastfetch/days.sh",
             "keyColor": "white"
         },
 
-        {
-            "key": "\n",
-            "type": "custom"
-        }
     ]
 }
