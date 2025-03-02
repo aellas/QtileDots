@@ -3,8 +3,8 @@
 <div align="center">
   <img src="https://img.shields.io/github/stars/aellas/QtileDots?style=for-the-badge&logo=starship&color=83c5be&logoColor=D9E0EE&labelColor=252733" alt="Stars">
   <img src="https://img.shields.io/github/last-commit/aellas/QtileDots?style=for-the-badge&color=006d77&logoColor=D9E0EE&labelColor=252733" alt="Last Commit">
-  <a href="https://github.com/jR4dh3y/qtiledots/blob/main/LICENSE">
-    <img alt="License" src="https://img.shields.io/github/license/h1tarxeth/Dots?style=for-the-badge&logo=starship&color=1d3557&logoColor=D9E0EE&labelColor=252733" />
+  <a href="https://github.com/aellas/QtileDots/blob/main/LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/aellas/QtileDots?style=for-the-badge&logo=starship&color=1d3557&logoColor=D9E0EE&labelColor=252733" />
   </a>
 </div>
 
