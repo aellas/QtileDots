@@ -9,7 +9,7 @@
 </div>
 
 **<p align="center"> This repository contains my configuration files for the Qtile window manager </p>**
-
+**<p align="center"> Also includes a theme switcher (see below for pictures of themes WIP!) </p>**
 ## Software
 
 - Distro: [Void](https://voidlinux.org/)
