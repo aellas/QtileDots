@@ -12,9 +12,9 @@
 
 ## Software
 
-- Distro: [Void](https://voidlinux.org/))
+- Distro: [Void](https://voidlinux.org/)
 - WM: [Qtile](https://qtile.org/)
-- Compositor: [Picom](https://github.com/yshui/picom))
+- Compositor: [Picom](https://github.com/yshui/picom)
 - Bar: [Qtile Bar](https://qtile.org/)
 - Shell: [Fish](https://fishshell.com/)
 - Prompt: [Starship](https://starship.rs/)
