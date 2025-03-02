@@ -44,15 +44,15 @@
 ![preview](preview/preview.png?raw=true)
 
 ## Themes
-# Custom theme
+- Custom theme
 ![theme1](preview/desktop1.png?raw=true)
-#Catpuccin Mocha
+- Catpuccin Mocha
 ![theme2](preview/desktop2.png?raw=true)
-#E-Ink
+- E-Ink
 ![theme3](preview/desktop3.png?raw=true)
-#Gruvbox
+- Gruvbox
 ![theme4](preview/desktop4.png?raw=true)
-#Poimandres
+- Poimandres
 ![theme5](preview/desktop5.png?raw=true)
 
 ## Credits
