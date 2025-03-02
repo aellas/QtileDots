@@ -9,7 +9,7 @@
 </div>
 
 **<p align="center"> This repository contains my configuration files for the Qtile window manager </p>**
-**<p align="center"> 🚧 Theme Selector [WIP] 🚧 </p>**
+**<p align="center"> 🚧 Theme Selector [WIP] 🚧 </p> See 	[Markdown - Link](##Themes) **
 
 ![preview](preview/preview.png?raw=true)
 
