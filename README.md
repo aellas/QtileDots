@@ -10,7 +10,7 @@
 
 **<p align="center"> This repository contains my configuration files for the Qtile window manager </p>**
 **<p align="center"> 🚧 [WIP] Also includes a very basic theme selector [WIP] 🚧 </p>**
-**<p align="center"> See [Themes](#Themes) </p>**
+**<p align="center"> See [Themes](#Themes) - Currently changes Kitty + Qtile Bar theme </p>**
 
 ![preview](preview/preview.png?raw=true)
 
