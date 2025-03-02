@@ -9,13 +9,12 @@
 </div>
 
 **<p align="center"> This repository contains my configuration files for the Qtile window manager </p>**
-<p align="center"> You can use <code>setup.sh</code> to automatically setup symlinks </p>
 
 ## Software
 
-- Distro: [CachyOS](https://cachyos.org/)
+- Distro: [Void](https://voidlinux.org/))
 - WM: [Qtile](https://qtile.org/)
-- Compositor: [Jonaburg-Picom](https://github.com/jonaburg/picom)
+- Compositor: [Picom](https://github.com/yshui/picom))
 - Bar: [Qtile Bar](https://qtile.org/)
 - Shell: [Fish](https://fishshell.com/)
 - Prompt: [Starship](https://starship.rs/)
