@@ -1,7 +1,6 @@
 from libqtile import hook
 import subprocess
-
-
+import os
 
 theme1 = { #custom
     "background": "#0F1014",
@@ -16,7 +15,7 @@ theme1 = { #custom
     "this_current_screen_border": "#D3C9D2",
     "urgent_border": "#D3C9D2",
     "urgent_text": "#0F1014",
-    "wallpaper": "/home/$USER/.config/qtile/themes/wallpapers/orange.jpg",
+    "wallpaper": "~/.config/qtile/themes/wallpapers/orange.jpg",
     "gtk_theme": "Space-dark",
     "kitty_theme": "default.conf",
 }
@@ -34,7 +33,7 @@ theme2 = { #catpuccin-mocha
     "this_current_screen_border": "#CAD3F5",
     "urgent_border": "#ff5555",
     "urgent_text": "#282828",
-    "wallpaper": "/home/$USER/.config/qtile/themes/wallpapers/koi.jpg",
+    "wallpaper": "~/.config/qtile/themes/wallpapers/koi.jpg",
     "kitty_theme": "mocha.conf",
 }
 
@@ -51,7 +50,7 @@ theme3 = { # eink
     "this_current_screen_border": "#3A3A3A",
     "urgent_border": "#FEFEFE",
     "urgent_text": "#3A3A3A",
-    "wallpaper": "/home/$USER/.config/qtile/themes/wallpapers/as.png",
+    "wallpaper": "~/.config/qtile/themes/wallpapers/as.png",
     "gtk_theme": "Graphite-Light",
     "kitty_theme": "eink.conf",
 }
@@ -69,7 +68,7 @@ theme4 = { # Gruvbox
     "this_current_screen_border": "#98971A",
     "urgent_border": "#ff5555",
     "urgent_text": "#282828",
-    "wallpaper": "/home/$USER/.config/qtile/themes/wallpapers/4.png",
+    "wallpaper": "~/.config/qtile/themes/wallpapers/4.png",
     "kitty_theme": "gruvbox.conf",
 }
 theme5 = {
@@ -85,7 +84,7 @@ theme5 = {
     "this_current_screen_border": "#A6ACCD",
     "urgent_border": "#ff5555",
     "urgent_text": "#282828",
-    "wallpaper": "/home/$USER/.config/qtile/themes/wallpapers/ocean.jpg",
+    "wallpaper": "~/.config/qtile/themes/wallpapers/ocean.jpg",
     "kitty_theme": "pomi.conf",
 }
 if 'current_theme' not in globals():
@@ -103,8 +102,8 @@ def switch_theme(qtile):
         current_theme = theme5
     else:
         current_theme = theme1
-     
-    subprocess.run(["feh", "--bg-fill", current_theme["wallpaper"]])
+    wallpaper_path = os.path.expanduser(current_theme["wallpaper"])
+    subprocess.run(["feh", "--bg-fill", wallpaper_path])
     if "gtk_theme" in current_theme:
         subprocess.run(["gsettings", "set", "org.gnome.desktop.interface", "gtk-theme", current_theme["gtk_theme"]])
 
@@ -113,4 +112,6 @@ def switch_theme(qtile):
 
 @hook.subscribe.startup_once
 def set_wallpaper():
-    subprocess.run(["feh", "--bg-fill", current_theme["wallpaper"]])
+    wallpaper_path = os.path.expanduser(current_theme["wallpaper"])
+
+    subprocess.run(["feh", "--bg-fill", wallpaper_path])

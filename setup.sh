@@ -1,16 +1,12 @@
-dotfiles = "$HOME/dotfiles"
+dotfiles = "/home/$USER/Documents/QtileDots"
 
 echo "moving dotfiles"
 
 cd $dotfiles
-ln -s $HOME/dotfiles/qtile ~/.config
-ln -s $HOME/dotfiles/rofi ~/.config
-ln -s $HOME/dotfiles/kitty ~/.config
-ln -s $HOME/dotfiles/picom ~/.config
-ln -s $HOME/dotfiles/dunst ~/.config
-ln -s $HOME/dotfiles/fastfetch ~/.config
-ln -s $HOME/dotfiles/myfetch ~/.config
-ln -s $HOME/dotfiles/nvim ~/.config
-ln -s $HOME/dotfiles/lf ~/.config
-ln -s $HOME/dotfiles/fish ~/.config
-ln -s $HOME/dotfiles/zellij ~/.config
+ln -s /home/$USER/Documents/QtileDots/qtile ~/.config
+ln -s /home/$USER/Documents/QtileDots/rofi ~/.config
+ln -s /home/$USER/Documents/QtileDots/kitty ~/.config
+ln -s /home/$USER/Documents/QtileDots/picom ~/.config
+ln -s /home/$USER/Documents/QtileDots/dunst ~/.config
+ln -s /home/$USER/Documents/QtileDots/fastfetch ~/.config
+ln -s /home/$USER/Documents/QtileDots/nvim ~/.config
