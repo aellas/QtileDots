@@ -39,9 +39,16 @@
 | Mod + N | Open TUI Filemanager |
 | Home | Take Full Screen Screenshot |
 
-## Screenshot
+## Preview
 
 ![preview](preview/preview.png?raw=true)
+
+## Themes
+![theme1](preview/desktop1.png?raw=true)
+![theme2](preview/desktop2.png?raw=true)
+![theme3](preview/desktop3.png?raw=true)
+![theme4](preview/desktop4.png?raw=true)
+![theme5](preview/desktop5.png?raw=true)
 
 ## Credits
 - [Bitterhalt](https://github.com/bitterhalt) - For tons of inspiration 🐐
