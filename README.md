@@ -10,6 +10,10 @@
 
 **<p align="center"> This repository contains my configuration files for the Qtile window manager </p>**
 **<p align="center"> 🚧 Theme Selector [WIP] 🚧 </p>**
+
+![preview](preview/preview.png?raw=true)
+
+
 ## Software
 
 - Distro: [Void](https://voidlinux.org/)
@@ -34,14 +38,12 @@
 |---|---|
 | Mod + Enter | Open Terminal |
 | Mod + Space | Open Rofi |
+| Mod + T | Change Theme |
 | Mod + Shift + R | Reload Qtile |
 | Mod + B | Open Web Browser |
 | Mod + N | Open TUI Filemanager |
 | Home | Take Full Screen Screenshot |
 
-## Preview
-
-![preview](preview/preview.png?raw=true)
 
 ## Themes
 - Custom theme
