@@ -1,4 +1,5 @@
 # ~/.config/qtile/my_qtile_functions.py
+from libqtile.lazy import lazy
 
 def smart_swap(qtile):
     layout = qtile.current_layout
@@ -11,3 +12,7 @@ def smart_swap(qtile):
             layout.swap_right()
         else:
             layout.swap_main()
+
+@lazy.window.function 
+def resize_floating_window(window, width: int = 0, height: int = 0): 
+    window.cmd_set_size_floating(wwindow.width + width, window.height + height)
