@@ -1,11 +1,16 @@
 import os
+import subprocess
 
 from libqtile import bar, layout, qtile, widget
 from libqtile.config import Click, Drag, DropDown, Group, Key, Match, ScratchPad, Screen
 from libqtile.lazy import lazy
+from libqtile.utils import guess_terminal
+from qtile_extras.widget.decorations import BorderDecoration
 from qtile_extras.widget.decorations import RectDecoration
 from qtile_extras import widget
+from libqtile.widget import backlight
 from themes.theme import current_theme, switch_theme 
+from libqtile import hook
 from libqtile.config import Match
 
 
@@ -240,7 +245,7 @@ textbox_decor = {
 
 widget_defaults = dict(
     font="Ubuntu Nerd Font Bold",
-    fontsize=18,
+    fontsize=13,
     padding=3,
     foreground="#ffffff",
 )
@@ -256,7 +261,7 @@ screens = [
                 ),
                 widget.TextBox(
                     fmt="  ",
-                    fontsize=16,
+                    fontsize=14,
                     background=current_theme["background"],
                     foreground=current_theme.get("background2"),  # Fallback color
                     mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(appLauncher)},
@@ -317,19 +322,6 @@ screens = [
                 widget.Spacer(length=4, fmt=" ╷ ", background=current_theme["background"]),
                 widget.TextBox(fmt=" │ ", foreground=current_theme["foreground"]),
                 widget.Spacer(length=8, fmt=" | ", background=current_theme["background"]),
-                               widget.Battery(
-                    update_interval=1,
-                   format="{char}  {percent:2.0%}",
-                   full_char = "󰁹",
-                   full_short_text="󰁹",
-                   charge_char = "󰢝",
-                   discharge_char = "󰁿",                        
-                   background=current_theme["background"], 
-                   foreground=current_theme["foreground"], 
-                              ),
-                 widget.Spacer(length=4, fmt=" ╷ ", background=current_theme["background"]),
-                widget.TextBox(fmt=" │ ", foreground=current_theme["foreground"]),
-                widget.Spacer(length=8, fmt=" | ", background=current_theme["background"]),
                 widget.Volume(
                     fmt="  {}",
                     background=current_theme["background"],
@@ -353,7 +345,7 @@ screens = [
                     background=current_theme["background"]
                 ),
             ],
-            46,
+            38,
             background=current_theme["background"],
             opacity=1.0,
             margin=[4, 4, 0, 4],

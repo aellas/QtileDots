@@ -16,6 +16,7 @@ theme1 = { #custom
     "urgent_border": "#D3C9D2",
     "urgent_text": "#0F1014",
     "wallpaper": "~/.config/qtile/themes/wallpapers/orange.jpg",
+    "gtk_theme": "Space-dark",
     "kitty_theme": "default.conf",
 }
 
@@ -50,6 +51,7 @@ theme3 = { # eink
     "urgent_border": "#FEFEFE",
     "urgent_text": "#3A3A3A",
     "wallpaper": "~/.config/qtile/themes/wallpapers/as.png",
+    "gtk_theme": "Graphite-Light",
     "kitty_theme": "eink.conf",
 }
 
