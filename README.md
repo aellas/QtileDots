@@ -13,9 +13,7 @@
 <<<<<<< HEAD
 
 ![preview](preview/preview1.png?raw=true)
-=======
-![preview](preview/preview.png?raw=true)
->>>>>>> eca11521f2fbcfdd36a16945126e15304321d82d
+
 
 
 ## Software
