@@ -1,5 +1,4 @@
-# <p align="center"> QtileDots </p>
-<p align="center"> This repository contains my configuration files for the Qtile window manager </p>
+# <p align="center"> QtileDots \n This repository contains my configuration files for the Qtile window manager </p>
 
 <div align="center">
   <img src="https://img.shields.io/github/stars/aellas/QtileDots?style=for-the-badge&logo=starship&color=83c5be&logoColor=D9E0EE&labelColor=252733" alt="Stars">
@@ -8,10 +7,6 @@
     <img alt="License" src="https://img.shields.io/github/license/aellas/QtileDots?style=for-the-badge&logo=starship&color=1d3557&logoColor=D9E0EE&labelColor=252733" />
   </a>
 </div>
-
-<p align="center"> I have included 2 bash scripts (setup_void.sh & dotfiles_setup.sh) in the repo </p>
-<p align="center"> **setup_void.sh** is a simple script that pretty much setups Void Linux for me, though it's a wip </p>
-<p align="center"> **dotfiles_setup.sh** is a script that symlinks my dotfiles </p>
 
 ![preview](preview/preview1.png?raw=true)
 
