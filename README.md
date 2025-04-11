@@ -10,8 +10,6 @@
 
 **<p align="center"> This repository contains my configuration files for the Qtile window manager </p>**
 
-<<<<<<< HEAD
-
 ![preview](preview/preview1.png?raw=true)
 
 
