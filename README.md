@@ -8,9 +8,7 @@
 </div>
 
 <p align="center">This repository contains my configuration files for the Qtile window manager</p>
-
-## Setup 
-I have included 2 scripts that help setup my dotfiles & a basic install script for void (mainly the software I use etc) so use at your own risk, the dotfiles_setup.sh sets up symlinks to .config.
+ <p align="center">Dots contain a very basic theme selector that only has 3 themes, check keybinds section on how to switch!</p>
 
 ![preview](preview/preview1.png?raw=true)
 
