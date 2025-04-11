@@ -9,8 +9,7 @@
 </div>
 
 **<p align="center"> This repository contains my configuration files for the Qtile window manager </p>**
-**<p align="center"> 🚧 [WIP] Also includes a very basic theme selector [WIP] 🚧 </p>**
-**<p align="center"> See [Themes](#Themes) - Currently changes Kitty + Qtile Bar theme </p>**
+
 
 ![preview](preview/preview.png?raw=true)
 
@@ -45,18 +44,6 @@
 | Mod + N | Open TUI Filemanager |
 | Home | Take Full Screen Screenshot |
 
-
-## Themes
-- Custom theme
-![theme1](preview/desktop1.png?raw=true)
-- Catpuccin Mocha
-![theme2](preview/desktop2.png?raw=true)
-- E-Ink
-![theme3](preview/desktop3.png?raw=true)
-- Gruvbox
-![theme4](preview/desktop4.png?raw=true)
-- Poimandres
-![theme5](preview/desktop5.png?raw=true)
 
 ## Credits
 - [Bitterhalt](https://github.com/bitterhalt) - For tons of inspiration 🐐
