@@ -14,10 +14,10 @@ Both scripts are designed to get my dotfiles fully working for myself on Void an
 1. **`setup_void.sh`**: This script is designed to help setup your Void install for Qtile
 2. **`dotfiles_setup.sh`**: This script installs and links your dotfiles into the correct locations for easy management..
 
+## Preview
 ![preview](preview/preview1.png?raw=true)
 
 ## Software
-
 - Distro: [Void](https://voidlinux.org/)
 - WM: [Qtile](https://qtile.org/)
 - Compositor: [Picom](https://github.com/yshui/picom)
