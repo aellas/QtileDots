@@ -1,5 +1,5 @@
 # <p align="center"> QtileDots </p>
-
+## <p align="center">This repository contains my configuration files for the Qtile window manager </p>
 <div align="center">
   <img src="https://img.shields.io/github/stars/aellas/QtileDots?style=for-the-badge&logo=starship&color=83c5be&logoColor=D9E0EE&labelColor=252733" alt="Stars">
   <img src="https://img.shields.io/github/last-commit/aellas/QtileDots?style=for-the-badge&color=006d77&logoColor=D9E0EE&labelColor=252733" alt="Last Commit">
