@@ -9,7 +9,8 @@
 
 <p align="center">This repository contains my configuration files for the Qtile window manager</p>
 
-## Installation
+## Setup 
+I have included 2 scripts that help setup my dotfiles & a basic install script for void (mainly the software I use etc) so use at your own risk, the dotfiles_setup.sh sets up symlinks to .config.
 
 ![preview](preview/preview1.png?raw=true)
 
