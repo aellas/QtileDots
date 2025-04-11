@@ -1,4 +1,4 @@
-# <p align="center"> QtileDots \n This repository contains my configuration files for the Qtile window manager </p>
+# <p align="center"> QtileDots </p>
 
 <div align="center">
   <img src="https://img.shields.io/github/stars/aellas/QtileDots?style=for-the-badge&logo=starship&color=83c5be&logoColor=D9E0EE&labelColor=252733" alt="Stars">
@@ -7,6 +7,8 @@
     <img alt="License" src="https://img.shields.io/github/license/aellas/QtileDots?style=for-the-badge&logo=starship&color=1d3557&logoColor=D9E0EE&labelColor=252733" />
   </a>
 </div>
+
+This repository contains my configuration files for the Qtile window manager.
 
 ![preview](preview/preview1.png?raw=true)
 
