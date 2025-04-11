@@ -9,7 +9,7 @@
 </div>
 
 **<p align="center"> This repository contains my configuration files for the Qtile window manager </p>**
-
+**<p align="center"> Use dotfiles_setup.sh to just setup symlinks for dots! </p>**
 ![preview](preview/preview1.png?raw=true)
 
 
