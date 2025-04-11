@@ -7,7 +7,8 @@
   </a>
 </div>
 <p align="center"> This repository contains my configuration files for the Qtile window manager </p>
-<p align="center"> You can use setup_void.sh to setup Qtile and all the programs I use to help get you started, you can also use dotfiles_setup.sh to setup symlinks to .config </p>
+## Note
+You can use setup_void.sh to setup Qtile and all the programs I use to help get you started, you can also use dotfiles_setup.sh to setup symlinks to .config
 
 ![preview](preview/preview1.png?raw=true)
 
