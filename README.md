@@ -10,10 +10,6 @@
 
 **<p align="center"> This repository contains my configuration files for the Qtile window manager </p>**
 
-
-![preview](preview/preview.png?raw=true)
-
-
 ## Software
 
 - Distro: [Void](https://voidlinux.org/)
