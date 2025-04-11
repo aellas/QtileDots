@@ -6,10 +6,7 @@
     <img alt="License" src="https://img.shields.io/github/license/aellas/QtileDots?style=for-the-badge&logo=starship&color=1d3557&logoColor=D9E0EE&labelColor=252733" />
   </a>
 </div>
-# <p align="center"> QtileDots </p>
 <p align="center"> This repository contains my configuration files for the Qtile window manager </p>
-<p align="left"> **Note** </p>
-You can use setup_void.sh to setup Qtile and all the programs I use to help get you started, you can also use dotfiles_setup.sh to setup symlinks to .config
 
 ![preview](preview/preview1.png?raw=true)
 
