@@ -1,4 +1,4 @@
-# <p align="center"> QtileDots </p>
+<p align="center">QtileDots</p>
 <div align="center">
   <img src="https://img.shields.io/github/stars/aellas/QtileDots?style=for-the-badge&logo=starship&color=83c5be&logoColor=D9E0EE&labelColor=252733" alt="Stars">
   <img src="https://img.shields.io/github/last-commit/aellas/QtileDots?style=for-the-badge&color=006d77&logoColor=D9E0EE&labelColor=252733" alt="Last Commit">
@@ -7,11 +7,11 @@
   </a>
 </div>
 
-**<p align="center"> This repository contains my configuration files for the Qtile window manager </p>
-**
+<p align="center">This repository contains my configuration files for the Qtile window manager</p>
+
+## Installation
+
 ![preview](preview/preview1.png?raw=true)
-
-
 
 ## Software
 
@@ -41,7 +41,7 @@
 | Mod + X | Gpick Color Picker |
 | Mod + M | Open Youtube Music |
 | Home | Take Full Screen Screenshot |
-| Mod + Home| Take Region Screenshot |
+| Mod + Home | Take Region Screenshot |
 | Mod + Q | Kill window |
 | Mod + K | Greenclip + Rofi Clipboard Manager |
 | Mod + SHIFT + Q | Exit Qtile |
