@@ -10,11 +10,8 @@
 <p align="center">This repository contains my configuration files for the Qtile window manager</p>
 
 ## Note
-To get started, you could use the following setup scripts I've included:
-1. **`setup_void.sh`**: This script is designed to set up your Void Linux environment for a smooth Qtile experience. It automates the installation of necessary packages and enables some services.
-2. **`dotfiles_setup.sh`**: This script installs and links your dotfiles into the correct locations for easy management of your configuration files.
-
-I would only use `setup_void.sh` on a fresh void linux install!
+`setup_void.sh` is my personal install script that helpes me install Qtile and all the programs I use, it also enables some services. Please use at your own risk!
+`dotfiles_setup.sh` This script creates symlinks for the dotfiles, this is what I use to keep my dotfiles organised. 
 
 
 ## Preview
