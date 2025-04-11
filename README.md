@@ -37,14 +37,10 @@ Both scripts are designed for a quick and simple setup for my own setups, but pl
 
 ## Theme Selector
 
-This setup includes a **basic theme selector** that allows you to quickly change between different themes with a keybind.
+This setup includes a **basic theme selector** that allows you to quickly change between different themes, please see **Keybinds** on how to switch themes.
 
-### Keybind to Switch Themes
-- **Mod + Shift + T**: Switch between available themes. This can be modified to add more themes or further customize the theme-switching functionality.
 
-Check the **Key Binds** section below for more information on keybindings and how to use the theme selector.
-
-## Main Key Binds
+## Main Keybinds
 
 | Keybind | Description |
 |---|---|
