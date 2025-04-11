@@ -24,7 +24,7 @@ Both scripts are designed to get my dotfiles fully working for myself and the so
 - Bar: [Qtile Bar](https://qtile.org/)
 - Shell: [Fish](https://fishshell.com/)
 - Font: [Ubuntu Nerd Font](https://www.nerdfonts.com/font-downloads)
-- GTK-Theme: [Space-dark (edited)](https://github.com/EliverLara/Space)
+- GTK-Theme: [MonoThemeDark (edited)](https://github.com/witalihirsch/Mono-gtk-theme))
 - Terminal: [Kitty](https://sw.kovidgoyal.net/kitty/)
 - Launcher: [Rofi](https://github.com/davatorium/rofi)
 - File Manager: [Yazi](https://github.com/sxyazi/yazi)
