@@ -11,12 +11,10 @@
 
 ## Optional
 
-I have included 2 scripts that help me setup a fresh void install, I highly suggest you look through them and either edit or add anything you need before using, these are purely used to help me setup for myself.
-
 1. **`setup_void.sh`**: This script is designed to help setup your Void install **[note]** it's a WIP at the moment, but it installs most of the software and enables services that I use.
 2. **`dotfiles_setup.sh`**: This script installs and links your dotfiles into the correct locations for easy management of your configuration files.
 
-Both scripts are designed for a quick and simple setup, but please use at your own risk. 
+Both scripts are designed for a quick and simple setup for my own setups, but please use at your own risk! 
 
 ![preview](preview/preview1.png?raw=true)
 
