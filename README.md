@@ -6,8 +6,9 @@
     <img alt="License" src="https://img.shields.io/github/license/aellas/QtileDots?style=for-the-badge&logo=starship&color=1d3557&logoColor=D9E0EE&labelColor=252733" />
   </a>
 </div>
-<p align="center"> This repository contains my configuration files for the Qtile window manager </p>
 
+**<p align="center"> This repository contains my configuration files for the Qtile window manager </p>
+**
 ![preview](preview/preview1.png?raw=true)
 
 
