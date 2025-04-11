@@ -2,10 +2,11 @@ from libqtile import hook
 import subprocess
 import os
 
-theme1 = { #custom
+theme3 = { #custom
     "background": "#0F1014",
     "foreground": "#ffffff",
-    "background2": "#009E85",
+    "background2": "#8EB6F5",
+    "background3": "#8A8BB1",
     "active": "#ffffff",
     "inactive": "#ffffff",
     "border_focus": "#C9C0C9",
@@ -15,29 +16,12 @@ theme1 = { #custom
     "this_current_screen_border": "#D3C9D2",
     "urgent_border": "#D3C9D2",
     "urgent_text": "#0F1014",
-    "wallpaper": "~/.config/qtile/themes/wallpapers/orange.jpg",
+    "wallpaper": "~/.config/qtile/themes/wallpapers/what.jpg",
     "gtk_theme": "Space-dark",
     "kitty_theme": "default.conf",
 }
 
-theme2 = { #catpuccin-mocha
-    "background": "#11111B",
-    "foreground": "#f8f8f2",
-    "background2": "#A6DA95",
-    "active": "#f8f8f2",
-    "inactive": "#f8f8f2",
-    "border_focus": "#CAD3F5",
-    "border_normal": "#CAD3F5",
-    "block_highlight_text_color": "#11111B",
-    "this_screen_border": "#CAD3F5",
-    "this_current_screen_border": "#CAD3F5",
-    "urgent_border": "#ff5555",
-    "urgent_text": "#282828",
-    "wallpaper": "~/.config/qtile/themes/wallpapers/koi.jpg",
-    "kitty_theme": "mocha.conf",
-}
-
-theme3 = { # eink
+theme2 = { # eink-light
     "background": "#BEBEBE",
     "foreground": "#3A3A3A",
     "background2": "#3A3A3A",
@@ -51,42 +35,28 @@ theme3 = { # eink
     "urgent_border": "#FEFEFE",
     "urgent_text": "#3A3A3A",
     "wallpaper": "~/.config/qtile/themes/wallpapers/as.png",
-    "gtk_theme": "Graphite-Light",
     "kitty_theme": "eink.conf",
 }
 
-theme4 = { # Gruvbox
-    "background": "#282828",
-    "foreground": "#D4BE97",
-    "background2": "#689D6A",
-    "active": "#D4BE97",
-    "inactive": "#D4BE97",
-    "border_focus": "#98971A",
-    "border_normal": "#98971A",
-    "block_highlight_text_color": "#282828",
-    "this_screen_border": "#98971A",
-    "this_current_screen_border": "#98971A",
-    "urgent_border": "#ff5555",
-    "urgent_text": "#282828",
-    "wallpaper": "~/.config/qtile/themes/wallpapers/4.png",
-    "kitty_theme": "gruvbox.conf",
-}
-theme5 = {
-    "background": "#1B1E28",
-    "foreground": "#C8CFDA",
-    "background2": "#5DE4C7",
-    "active": "#C8CFDA",
-    "inactive": "#C8CFDA",
-    "border_focus": "#A6ACCD",
-    "border_normal": "#A6ACCD",
+theme1 = {
+"background": "#0A0A0A",
+    "foreground": "#DBDBDB",
+    "background2": "#F8F9FA",
+    "active": "#D8D8D8",
+    "inactive": "#D8D8D8",
+    "border_focus": "#B5B5B5",
+    "border_normal": "#B5B5B5",
     "block_highlight_text_color": "#171922",
-    "this_screen_border": "#A6ACCD",
-    "this_current_screen_border": "#A6ACCD",
+    "this_screen_border": "#B5B5B5",
+    "this_current_screen_border": "#B5B5B5",
     "urgent_border": "#ff5555",
     "urgent_text": "#282828",
-    "wallpaper": "~/.config/qtile/themes/wallpapers/ocean.jpg",
-    "kitty_theme": "pomi.conf",
+    "wallpaper": "~/.config/qtile/themes/wallpapers/monochrome/waters.jpg",
+    "gtk_theme": "MonoThemeDark",
+    "kitty_theme": "monochrome.conf",
 }
+
+
 if 'current_theme' not in globals():
     current_theme = theme1
 
@@ -96,10 +66,6 @@ def switch_theme(qtile):
         current_theme = theme2
     elif current_theme == theme2:
         current_theme = theme3
-    elif current_theme == theme3:
-        current_theme = theme4
-    elif current_theme == theme4:
-        current_theme = theme5
     else:
         current_theme = theme1
     wallpaper_path = os.path.expanduser(current_theme["wallpaper"])
