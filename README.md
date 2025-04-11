@@ -1,4 +1,4 @@
-# <p align="center">QtileDots</p>
+<p align="center">QtileDots</p>
 <div align="center">
   <img src="https://img.shields.io/github/stars/aellas/QtileDots?style=for-the-badge&logo=starship&color=83c5be&logoColor=D9E0EE&labelColor=252733" alt="Stars">
   <img src="https://img.shields.io/github/last-commit/aellas/QtileDots?style=for-the-badge&color=006d77&logoColor=D9E0EE&labelColor=252733" alt="Last Commit">
@@ -8,7 +8,15 @@
 </div>
 
 <p align="center">This repository contains my configuration files for the Qtile window manager</p>
- <p align="center">Dots contain a very basic theme selector that only has 3 themes, check keybinds section on how to switch!</p>
+
+## Installation
+
+To get started, you can use the following setup scripts:
+
+1. **`setup_void.sh`**: This script is designed to set up your Void Linux environment for a smooth Qtile experience. It automates the installation of necessary packages and configurations.
+2. **`dotfiles_setup.sh`**: This script installs and links your dotfiles into the correct locations for easy management of your configuration files.
+
+Both scripts are designed for quick and simple setup, making it easy to get your environment up and running with minimal effort.
 
 ![preview](preview/preview1.png?raw=true)
 
@@ -28,6 +36,15 @@
 - Notification: [Dunst](https://github.com/dunst-project/dunst)
 - Image Viewer: [Feh](https://feh.finalrewind.org/)
 - Media Player: [mpv](https://github.com/mpv-player/mpv)
+
+## Theme Selector
+
+This setup includes a **basic theme selector** that allows you to quickly change between different themes with a keybind.
+
+### Keybind to Switch Themes
+- **Mod + Shift + T**: Switch between available themes. This can be modified to add more themes or further customize the theme-switching functionality.
+
+Check the **Key Binds** section below for more information on keybindings and how to use the theme selector.
 
 ## Main Key Binds
 
