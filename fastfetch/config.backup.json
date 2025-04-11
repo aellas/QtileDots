@@ -1,0 +1,71 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "none"
+        //"type": "auto",
+        //"source": ".config/fastfetch/void.txt"
+    },
+    
+    "display": {
+        "separator": " "
+    },
+    "modules": [
+        {
+            "key": "   {#32}array{#39}@{#32}main-nix",
+            "type": "custom"
+        },
+        {
+            "key": " {#36}󰻀   ",
+            "type": "os",
+            "keyColor": "white"
+        },
+        {
+            "key": " {#36}   ",
+            "type": "kernel",
+            "keyColor": "white"
+        },
+        {
+            "key": " {#36}   ",
+            "type": "wm",
+            "keyColor": "white"
+        },
+        {
+            "key": " {#36}   ",
+            "type": "packages",
+            "keyColor": "white"
+        },
+        {
+            "key": " {#36}   ",
+            "type": "uptime",
+            "keyColor": "white"
+        },
+        {
+            "key": "   {#32}2 YEAR CHALLENGE",
+            "type": "custom"
+        },
+        {
+            "type": "command",
+            "key": " {#36}   ",
+            "text": "bash ~/.config/fastfetch/days.sh",
+            "keyColor": "white"
+        },
+        {
+            "type": "command",
+            "key": " {#36}   ",
+            "text": "bash ~/.config/fastfetch/days-left.sh",
+            "keyColor": "white"
+        },
+        {
+            "type": "command",
+            "key": " {#36}   ",
+            "text": "bash ~/.config/fastfetch/progress.sh",
+            "keyColor": "white"
+        },
+        {
+            "key": "\n",
+            "type": "custom",
+            "keyColor": "white"
+        }
+
+    ]
+}
