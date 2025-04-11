@@ -13,10 +13,10 @@
 
 To get started, you can use the following setup scripts:
 
-1. **`setup_void.sh`**: This script is designed to set up your Void Linux environment for a smooth Qtile experience. It automates the installation of necessary packages and configurations.
+1. **`setup_void.sh`**: This script is designed to help setup your Void install **[note]** it's a WIP at the moment, but it installs most of the software and enables services that I use.
 2. **`dotfiles_setup.sh`**: This script installs and links your dotfiles into the correct locations for easy management of your configuration files.
 
-Both scripts are designed for quick and simple setup, making it easy to get your environment up and running with minimal effort.
+Both scripts are designed for a quick and simple setup, but please use at your own risk. 
 
 ![preview](preview/preview1.png?raw=true)
 
