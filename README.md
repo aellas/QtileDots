@@ -9,7 +9,10 @@
 </div>
 
 **<p align="center"> This repository contains my configuration files for the Qtile window manager </p>**
-**<p align="center"> Use dotfiles_setup.sh to just setup symlinks for dots! </p>**
+<p align="center"> Use dotfiles_setup.sh to just setup symlinks for dots! </p>
+<p align="center"> setup_void.sh is a wip, but will get you somewhat everything I use on Void </p>
+<p align="center"> Basic theme selector also included, check keybinds for how to switch </p>
+
 ![preview](preview/preview1.png?raw=true)
 
 
