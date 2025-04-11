@@ -21,7 +21,6 @@
 - Compositor: [Picom](https://github.com/yshui/picom)
 - Bar: [Qtile Bar](https://qtile.org/)
 - Shell: [Fish](https://fishshell.com/)
-- Prompt: [Starship](https://starship.rs/)
 - Font: [Ubuntu Nerd Font](https://www.nerdfonts.com/font-downloads)
 - GTK-Theme: [Space-dark (edited)](https://github.com/EliverLara/Space)
 - Terminal: [Kitty](https://sw.kovidgoyal.net/kitty/)
@@ -36,14 +35,19 @@
 
 | Keybind | Description |
 |---|---|
-| Mod + Enter | Open Terminal |
-| Mod + Space | Open Rofi |
-| Mod + T | Change Theme |
-| Mod + Shift + R | Reload Qtile |
+| Mod + Enter | Launch Terminal |
+| Mod + Space | Launch Rofi |
 | Mod + B | Open Web Browser |
-| Mod + N | Open TUI Filemanager |
+| Mod + N | Open Filemanager |
+| Mod + X | Gpick Color Picker |
+| Mod + M | Open Youtube Music |
 | Home | Take Full Screen Screenshot |
-
+| Mod + Home| Take Region Screenshot |
+| Mod + Q | Kill window |
+| Mod + K | Greenclip + Rofi Clipboard Manager |
+| Mod + SHIFT + Q | Exit Qtile |
+| Mod + SHIFT + R | Reload Qtile |
+| Mod + SHIFT + T | Switch Themes |
 
 ## Credits
 - [Bitterhalt](https://github.com/bitterhalt) - For tons of inspiration 🐐
