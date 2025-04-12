@@ -12,8 +12,8 @@ terminal = f"kitty --config /home/array/.config/kitty/{current_theme['kitty_them
 webBrowser = "firefox"
 fileExplorer = "thunar"
 appLauncher = "rofi -show drun"
-screenshotFull = "flameshot full --clipboard --path /home/array/Pictures/Screenshots"
-screenshotRegion = "flameshot gui --clipboard --path /home/array/Pictures/Screenshots --accept-on-select"
+screenshotFull = "flameshot full --clipboard --path /home/$USER/Pictures/Screenshots"
+screenshotRegion = "flameshot gui --clipboard --path /home/$USER/Pictures/Screenshots --accept-on-select"
 prismLauncher = "prismlauncher"
 youtubeMusic = '/opt/YouTube-Music/youtube-music'
 boltLauncher = "lutris"
@@ -163,7 +163,7 @@ screens = [
                                mouse_callbacks={'Button1': lambda: qtile.cmd_spawn(appLauncher)}),
                 separator(),
                 widget.GroupBox(
-                    font="Ubuntu Nerd Font", font_size="12", margin_y=3, margin_x=2, padding_y=5.3, padding_x=5.2,
+                    font="Ubuntu Nerd Font", font_size="12", margin_y=3, margin_x=2, padding_y=5.3, padding_x=5.2, disable_drag=True,
                     active=current_theme["active"], inactive=current_theme["inactive"], rounded=True,
                     highlight_method="block", block_highlight_text_color=current_theme["block_highlight_text_color"],
                     this_screen_border=current_theme["this_screen_border"], this_current_screen_border=current_theme["this_current_screen_border"],
