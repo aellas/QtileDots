@@ -10,7 +10,6 @@ sudo xbps-install -y \
   qtile \
   python3-qtile-extras \
   picom \
-  qtile \
   feh \
   kitty \
   flameshot \
