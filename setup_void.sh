@@ -51,7 +51,7 @@ echo "Enabling UFW (firewall)"
 sudo ufw enable
 
 echo "Downloading and installing greenclip..."
-wget https://github.com/erebe/greenclip/releases/download/v4.2/greenclip -O /usr/local/bin/greenclip
+sudo wget https://github.com/erebe/greenclip/releases/download/v4.2/greenclip -O /usr/local/bin/greenclip
 sudo chmod +x /usr/local/bin/greenclip
 
 echo "Setup completed!"

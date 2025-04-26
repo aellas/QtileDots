@@ -11,7 +11,7 @@ done
 
 if [[ $mode = "quiet" ]];
 then
-	sudo liquidctl --match corsair initialize --pump-mode balanced > /dev/null 2>&1
+	sudo liquidctl --match corsair initialize --pump-mode quiet > /dev/null 2>&1
 	sudo liquidctl --match corsair set fan speed 32 20 33 30 34 38 36 50 38 72 40 85 42 100 > /dev/null 2>&1
 elif [[ $mode = "balanced" ]];
 then

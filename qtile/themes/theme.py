@@ -4,7 +4,7 @@ import os
 
 theme3 = { #custom
     "background": "#0F1014",
-    "foreground": "#ffffff",
+    "foreground": "#e1e6ff",
     "background2": "#8EB6F5",
     "background3": "#8A8BB1",
     "active": "#ffffff",
@@ -40,6 +40,24 @@ theme2 = { # eink-light
 
 theme1 = {
 "background": "#0A0A0A",
+    "foreground": "#D2D2D2",
+    "background2": "#D8D8D8",
+    "active": "#D8D8D8",
+    "inactive": "#D8D8D8",
+    "border_focus": "#e1e6ff",
+    "border_normal": "#e1e6ff",
+    "block_highlight_text_color": "#171922",
+    "this_screen_border": "#e1e6ff",
+    "this_current_screen_border": "#e1e6ff",
+    "urgent_border": "#ff5555",
+    "urgent_text": "#282828",
+    "wallpaper": "~/.config/qtile/themes/wallpapers/monochrome/waters.jpg",
+    "gtk_theme": "MonoThemeDark",
+    "kitty_theme": "monochrome.conf",
+}
+
+theme4 = {
+    "background": "#0A0A0A",
     "foreground": "#DBDBDB",
     "background2": "#F8F9FA",
     "active": "#D8D8D8",
@@ -55,6 +73,8 @@ theme1 = {
     "gtk_theme": "MonoThemeDark",
     "kitty_theme": "monochrome.conf",
 }
+
+
 
 
 if 'current_theme' not in globals():

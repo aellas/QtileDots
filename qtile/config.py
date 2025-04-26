@@ -12,17 +12,18 @@ terminal = f"kitty --config /home/array/.config/kitty/{current_theme['kitty_them
 webBrowser = "firefox"
 fileExplorer = "thunar"
 appLauncher = "rofi -show drun"
-screenshotFull = "flameshot full --clipboard --path /home/$USER/Pictures/Screenshots"
-screenshotRegion = "flameshot gui --clipboard --path /home/$USER/Pictures/Screenshots --accept-on-select"
+screenshotFull = "flameshot full --clipboard --path /home/array/Pictures/Screenshots"
+screenshotRegion = "flameshot gui --clipboard --path /home/array/Pictures/Screenshots --accept-on-select"
 prismLauncher = "prismlauncher"
 youtubeMusic = '/opt/YouTube-Music/youtube-music'
-boltLauncher = "lutris"
+boltLauncher = "dbus-run-session env _JAVA_AWT_WM_NONREPARENTING=1 flatpak run com.adamcake.Bolt"
 vesktop = "/opt/Vesktop/vesktop %U"
 gpick = "gpick --pick"
-steam = "steam"
+steam = "bash .config/qtile/scripts/steam.sh"
 code = "code"
 nvim = f"kitty --config /home/array/.config/kitty/{current_theme['kitty_theme']} nvim" 
 clipboard = "rofi -modi 'clipboard:greenclip print' -show clipboard -run-command 'echo {cmd} | xclip -selection clipboard'"
+lock = "betterlockscreen -l blur"
 
 keys = [
     # Program Launchers
@@ -39,6 +40,7 @@ keys = [
     Key([mod], "l", lazy.spawn(nvim), desc="Launch Neovim"),
     Key([mod], "k", lazy.spawn(clipboard), desc="Launch clipboard manager"),
     Key([mod], "F11", lazy.spawn("bash /home/array/Documents/QtileDots/qtile/scripts/cycle-aio.sh"), desc="Cycle AIO mode"),
+    Key([mod], "z", lazy.spawn(lock), desc="Lock Screen"),
     # Screenshots
     Key([], "Home", lazy.spawn(screenshotFull), desc="Take full screenshot"),
     Key([mod], "Home", lazy.spawn(screenshotRegion), desc="Take region screenshot"), 
@@ -151,7 +153,7 @@ widget_defaults = dict(
 
 extension_defaults = widget_defaults.copy()
 
-separator = lambda: widget.TextBox(fmt="  •  ", **widget_defaults)
+separator = lambda: widget.TextBox(fmt=" • ", **widget_defaults)
 spacer = lambda length: widget.Spacer(length=length, **widget_defaults)
 
 screens = [
