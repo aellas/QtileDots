@@ -48,10 +48,10 @@ theme1 = {
     "border_normal": "#e1e6ff",
     "block_highlight_text_color": "#171922",
     "this_screen_border": "#e1e6ff",
-    "this_current_screen_border": "#e1e6ff",
+    "this_current_screen_border": "#D8D8D8",
     "urgent_border": "#ff5555",
     "urgent_text": "#282828",
-    "wallpaper": "~/.config/qtile/themes/wallpapers/monochrome/waters.jpg",
+    "wallpaper": "~/.config/qtile/themes/wallpapers/roses.jpg",
     "gtk_theme": "MonoThemeDark",
     "kitty_theme": "monochrome.conf",
 }

@@ -9,7 +9,7 @@ from functions import smart_swap, float_all_windows, tile_all_windows, resize_fl
 
 mod = "mod4"
 terminal = f"kitty --config /home/array/.config/kitty/{current_theme['kitty_theme']}"
-webBrowser = "firefox"
+webBrowser = "floorp"
 fileExplorer = "thunar"
 appLauncher = "rofi -show drun"
 screenshotFull = "flameshot full --clipboard --path /home/array/Pictures/Screenshots"
@@ -131,7 +131,7 @@ keys.extend([
 ])
 
 def longNameParse(text):
-    for string in ["Brave", "Code"]:  
+    for string in ["Brave", "Code", "Floorp", "Discord"]:  
         if string.lower() in text.lower():  
             return string  
     return text 
@@ -145,7 +145,7 @@ current_layout_icon = widget.CurrentLayoutIcon(
 
 widget_defaults = dict(
     font="Ubuntu Nerd Font Bold",
-    fontsize=13,
+    fontsize=12,
     padding=3,
     background=current_theme["background"],  
     foreground=current_theme["foreground"],
@@ -161,9 +161,6 @@ screens = [
         top=bar.Bar(
             [
                 spacer(12),
-                widget.TextBox(fmt="  ", fontsize=14, foreground=current_theme.get("background2"),
-                               mouse_callbacks={'Button1': lambda: qtile.cmd_spawn(appLauncher)}),
-                separator(),
                 widget.GroupBox(
                     font="Ubuntu Nerd Font", font_size="12", margin_y=3, margin_x=2, padding_y=5.3, padding_x=5.2, disable_drag=True,
                     active=current_theme["active"], inactive=current_theme["inactive"], rounded=True,
@@ -171,8 +168,10 @@ screens = [
                     this_screen_border=current_theme["this_screen_border"], this_current_screen_border=current_theme["this_current_screen_border"],
                     urgent_border=current_theme["urgent_border"], urgent_text=current_theme["urgent_text"],
                 ),
-                separator(),
-                widget.WindowName(format="  {name}", parse_text=longNameParse, max_chars=150),
+                                widget.WindowName(format="  {name}", parse_text=longNameParse, max_chars=150),
+                widget.Spacer(),
+                widget.Clock(format="%a,  %d      %H:%M"),
+                widget.Spacer(),
                 current_layout_icon,
                 widget.CurrentLayout(padding_y=20),
                 separator(),
@@ -181,6 +180,8 @@ screens = [
                 widget.Memory(format='  {MemUsed: .0f}{mm}'),
                 separator(),
                 widget.Volume(fmt="  {}"),
+                widget.WidgetBox(fmt=" • ", text_open="  ", text_close="  ", close_button_location="right", widgets=[widget.Systray(icon_size=16, padding=4, fmt=' {} ')]),
+
                 widget.GenPollText(
                 update_interval=2,
                 func=lambda: subprocess.check_output(
@@ -202,14 +203,12 @@ screens = [
                         "toggle"
                     ]),
                 },
-                fmt="  •     {}",
+                fmt=" {}",
             ),
-                separator(),
-                widget.WidgetBox(fmt=" 󱑆 ", text_open="  ", text_close="  ", close_button_location="right", widgets=[widget.Systray(icon_size=16, padding=10, fmt=' {} ')]),
-                widget.Clock(format="%a,  %d  -  %H:%M "),
-                spacer(20),
+
+                spacer(12),
             ],
-            38,
+            34,
             background=current_theme["background"],
             opacity=1.0,
             margin=[6, 8, -2, 8]
