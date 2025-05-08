@@ -1,14 +1,9 @@
-# <p align="center">QtileDots</p>
+# <p align="center">QtileDots with Pywall</p>
 
 <p align="center">This repository contains my configuration files for the Qtile window manager</p>
 
-## Note
-1. `setup_void.sh` is my personal install script that helpes me install Qtile and all the programs I use, it also enables some services. **Please use at your own risk!**
-2. `dotfiles_setup.sh` This script creates symlinks for the dotfiles, this is what I use to keep my dotfiles organised. 
-
-
 ## Preview
-![preview](preview/preview1.png?raw=true)
+![preview](preview/preview.png?raw=true)
 
 ## Software
 - Distro: [Void](https://voidlinux.org/)
