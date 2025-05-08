@@ -1,4 +1,4 @@
-# <p align="center">QtileDots with Pywall</p>
+# <p align="center">QtileDots</p>
 
 <p align="center">This repository contains my configuration files for the Qtile window manager</p>
 
