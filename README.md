@@ -2,7 +2,6 @@
 
 <p align="center">This repository contains my configuration files for the Qtile window manager</p>
 
-## Preview
 ![preview](preview/preview.png?raw=true)
 
 ## Software
