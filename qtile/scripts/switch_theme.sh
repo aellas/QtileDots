@@ -1,41 +1,21 @@
 #!/bin/bash
 
-# Define themes with their corresponding config identifiers
-declare -A themes
-themes=(
-    ["Custom"]="theme1"
-    ["Catppuccin-Mocha"]="theme2"
-    ["E-Ink Light"]="theme3"
-    ["Gruvbox"]="theme4"
-    ["Ocean"]="theme5"
-    ["E-Ink Dark"]="theme6"
-)
+# Directory containing wallpapers
+WALLPAPER_DIR="/home/array/Documents/void/QtileDots/qtile/themes/wallpapers/"
 
-# Path to Qtile config
-QTILE_CONFIG="$HOME/.config/qtile/config.py"
-STATE_FILE="$HOME/.config/qtile/current_theme"
+# Use rofi to select a wallpaper
+SELECTED=$(find "$WALLPAPER_DIR" -type f | sort | rofi -dmenu -i -p "Select Wallpaper")
 
-# Read last theme (if exists)
-if [ -f "$STATE_FILE" ]; then
-    last_theme=$(cat "$STATE_FILE")
-else
-    last_theme="Custom"
-fi
+# Exit if no selection made
+[ -z "$SELECTED" ] && exit 1
 
-# Show Rofi menu
-chosen_theme=$(printf "%s\n" "${!themes[@]}" | rofi -dmenu -p "Select Theme:")
+# Set wallpaper using feh
+feh --bg-fill "$SELECTED"
 
-# If no selection, exit
-[ -z "$chosen_theme" ] && exit 1
+# Generate pywal colors
+wal -i "$SELECTED"
 
-# Get the corresponding theme variable name
-theme_var="${themes[$chosen_theme]}"
-
-# Update the Qtile config to set the new theme
-sed -i "s/^current_theme = .*/current_theme = $theme_var/" "$QTILE_CONFIG"
-
-# Save selected theme for persistence
-echo "$chosen_theme" > "$STATE_FILE"
-
-# Restart Qtile to apply changes
+# Reload Qtile config
 qtile cmd-obj -o cmd -f reload_config
+
+bash dunst.sh

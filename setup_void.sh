@@ -34,6 +34,7 @@ sudo xbps-install -y \
   nwg-look \
   neovim \
   pyright \
+  pywal \
 
 
 # Enable services
