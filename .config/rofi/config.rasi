@@ -1,7 +1,7 @@
 @import "~/.cache/wal/colors-rofi-dark.rasi"
 
 * {
-    font: "Ubuntu Nerd Font 12";
+    font: "JetBrainsMonoNF 12";
     spacing: 2;
 }
 

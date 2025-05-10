@@ -1,10 +1,9 @@
 #!/bin/bash
 
-dotfiles_dir=$(dirname "$(realpath "$0")")
+dotfiles_dir="$HOME/Documents/void/QtileDots/.config"
+target_dir="/home/array/.config"
 
-echo "Moving dotfiles..."
-
-cd "$dotfiles_dir" || { echo "Directory not found: $dotfiles_dir"; exit 1; }
+echo "Moving dotfiles from $dotfiles_dir to $target_dir..."
 
 # Function to create symlink if it doesn't already exist
 create_symlink() {
@@ -19,10 +18,10 @@ create_symlink() {
   fi
 }
 
-# Symlink for other directories, excluding themes and fonts
+# Symlink for specified directories
 for dir in qtile rofi kitty picom dunst fastfetch nvim; do
   target="$dotfiles_dir/$dir"
-  link="$HOME/.config/$dir"
+  link="$target_dir/$dir"
   create_symlink "$target" "$link"
 done
 
