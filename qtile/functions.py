@@ -1,5 +1,8 @@
-# ~/.config/qtile/my_qtile_functions.py
 from libqtile.lazy import lazy
+from libqtile import bar, layout, qtile, widget, hook
+
+def separator():
+    return widget.TextBox(fmt=" • ")
 
 def smart_swap(qtile):
     layout = qtile.current_layout
@@ -33,3 +36,24 @@ def toggle_floating_all(qtile):
 @lazy.window.function 
 def resize_floating_window(window, width: int = 0, height: int = 0): 
     window.cmd_set_size_floating(window.width + width, window.height + height)
+
+@lazy.function
+def update_visible_groups(qtile):
+    visible = []
+    for group in qtile.groups:
+        if group.name in ["6", "7", "8", "9"]:
+            # Show only if focused or has windows
+            if group == qtile.current_group or group.windows:
+                visible.append(group.name)
+        else:
+            visible.append(group.name)
+    for w in qtile.widgets_map.values():
+        if hasattr(w, 'visible_groups'):
+            w.visible_groups = visible
+            w.bar.draw()
+
+@hook.subscribe.client_managed
+@hook.subscribe.client_killed
+@hook.subscribe.setgroup
+def refresh_groups(*_):
+    update_visible_groups(qtile)

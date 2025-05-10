@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Directory containing wallpapers
-WALLPAPER_DIR="/home/array/Documents/void/QtileDots/qtile/themes/wallpapers/"
+WALLPAPER_DIR="$HOME/Documents/void/QtileDots/wallpapers/"
 
 # Use rofi to select a wallpaper
 SELECTED=$(find "$WALLPAPER_DIR" -type f | sort | rofi -dmenu -i -p "Select Wallpaper")

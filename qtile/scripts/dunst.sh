@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # Symlink dunst config
 ln -sf ~/.cache/wal/dunstrc ~/.config/dunst/dunstrc
