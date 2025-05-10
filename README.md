@@ -13,11 +13,8 @@
 - Font: [Ubuntu & JetBrains Nerd Fonts](https://www.nerdfonts.com/font-downloads)
 - Terminal: [Kitty](https://sw.kovidgoyal.net/kitty/)
 - Launcher: [Rofi](https://github.com/davatorium/rofi)
-- File Manager: [Yazi](https://github.com/sxyazi/yazi)
 - Screenshots: [flameshot](https://flameshot.org/)
 - Notification: [Dunst](https://github.com/dunst-project/dunst)
-- Image Viewer: [Feh](https://feh.finalrewind.org/)
-- Media Player: [mpv](https://github.com/mpv-player/mpv)
 
 ## Theme Selector
 
