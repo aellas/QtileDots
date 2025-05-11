@@ -1,54 +1,36 @@
-import os, subprocess, json
-import requests
+import os, subprocess, json, requests
 from libqtile import bar, layout, qtile, widget, hook
 from libqtile.config import Click, Drag, DropDown, Group, Key, Match, ScratchPad, Screen
 from libqtile.lazy import lazy
 from functions import smart_swap, float_all_windows, tile_all_windows, toggle_floating_all, update_visible_groups, separator
 from colours import current_theme
-from qtile_extras.widget.syncthing import Syncthing
 
-# --- Defaults ---
+# --- Mod --- #
 mod = "mod4"
-terminal = "kitty --config .config/kitty/kitty.conf"
-web_browser = "firefox"
-file_explorer = "thunar"
-app_launcher = "rofi -show drun"
-screenshotFull = "flameshot full --clipboard --path /home/array/Pictures/Screenshots"
-screenshotRegion = "flameshot gui --clipboard --path /home/array/Pictures/Screenshots --accept-on-select"
-prism_launcher = "prismlauncher"
-youtube_music = '/opt/YouTube-Music/youtube-music'
-bolt_launcher = "dbus-run-session env _JAVA_AWT_WM_NONREPARENTING=1 flatpak run com.adamcake.Bolt"
-vesktop_launcher = "/opt/Vesktop/vesktop %U"
-color_picker = "gpick --pick"
-steam_launcher = "bash .config/qtile/scripts/steam.sh"
-code_editor = "code-oss"
-clipboard_manager = "rofi -modi 'clipboard:greenclip print' -show clipboard -run-command 'echo {cmd} | xclip -selection clipboard'"
-screen_lock = "betterlockscreen -l blur"
-update_script = "bash .config/qtile/scripts/update_checker.sh"
-power_menu = "bash .config/qtile/scripts/powermenu.sh"
-theme_switcher = "/home/array/.config/qtile/scripts/switch_theme.sh"
-neovim = "kitty -e nvim"
 
-# --- Key Bindings ---
+# --- Key Bindings --- #
 keys = [
-    Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
-    Key([mod], "b", lazy.spawn(web_browser), desc="Launch web browser"),
-    Key([mod], "n", lazy.spawn(file_explorer), desc="Launch file explorer"),
-    Key([mod], "Space", lazy.spawn(app_launcher), desc="Launch app launcher (rofi)"),
-    Key([mod], "j", lazy.spawn(bolt_launcher), desc="Launch bolt launcher"),
-    Key([mod], "m", lazy.spawn(youtube_music), desc="Launch YouTube Music"),
-    Key([mod], "c", lazy.spawn(code_editor), desc="Launch VSCode"),
-    Key([mod], "d", lazy.spawn(vesktop_launcher), desc="Launch Vesktop"),
-    Key([mod], "x", lazy.spawn(color_picker), desc="Launch Gpick color picker"),
-    Key([mod], "s", lazy.spawn(steam_launcher), desc="Launch Steam"),
-    Key([mod], "l", lazy.spawn(neovim), desc="Launch Neovim"),
-    Key([mod], "k", lazy.spawn(clipboard_manager), desc="Launch clipboard manager"),
-    Key([mod], "z", lazy.spawn(screen_lock), desc="Lock Screen"),
-    Key(["control", "mod1"], "Delete", lazy.spawn(power_menu), desc="Power Menu"),
-    Key([mod, "shift"], "t", lazy.spawn(theme_switcher), desc="Switch theme"),
+# --- My Personal Keybinds --- #
+    Key([mod], "Return", lazy.spawn('kitty --config .config/kitty/kitty.conf'), desc="Launch terminal"),
+    Key([mod], "Space", lazy.spawn('rofi -show drun'), desc="Launch app launcher (rofi)"),
+    Key([mod], "b", lazy.spawn('firefox'), desc="Launch web browser"),
+    Key([mod], "n", lazy.spawn('thunar'), desc="Launch file explorer"),
+    Key([mod], "j", lazy.spawn('dbus-run-session env _JAVA_AWT_WM_NONREPARENTING=1 flatpak run com.adamcake.Bolt'), desc="Launch bolt launcher"),
+    Key([mod], "m", lazy.spawn('/opt/YouTube-Music/youtube-music'), desc="Launch YouTube Music"),
+    Key([mod], "d", lazy.spawn('/opt/Vesktop/vesktop %U'), desc="Launch Vesktop"),   
+    Key([mod], "c", lazy.spawn('code-oss'), desc="Launch VSCode"),
+    Key([mod], "x", lazy.spawn('gpick --pick'), desc="Launch Gpick color picker"),
+    Key([mod], "s", lazy.spawn('bash /home/array/.config/qtile/scripts/steam.sh'), desc="Launch Steam"),
+    Key([mod], "l", lazy.spawn('kitty -e nvim'), desc="Launch Neovim"),
+    Key([mod], "k", lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command 'echo {cmd} | xclip -selection clipboard'"), desc="Launch clipboard manager"),
+    Key([mod], "z", lazy.spawn('betterlockscreen -l blur'), desc="Lock Screen"),
+    Key(["control", "mod1"], "Delete", lazy.spawn('/home/array/.config/qtile/scripts/powermenu.sh'), desc="Power Menu"),
+    Key([mod, "shift"], "t", lazy.spawn('/home/array/.config/qtile/scripts/switch_theme.sh'), desc="Switch theme"),
+    Key([], "Home", lazy.spawn('flameshot full --clipboard --path /home/array/Pictures/Screenshots'), desc="Take full screenshot"),
+    Key([mod], "Home", lazy.spawn('flameshot gui --clipboard --path /home/array/Pictures/Screenshots --accept-on-select'), desc="Take region screenshot"),
+
+# --- Qtile Specific Keybinds --- #
     Key([mod], "o", lazy.hide_show_bar(), desc="Hides the bar"),
-    Key([], "Home", lazy.spawn(screenshotFull), desc="Take full screenshot"),
-    Key([mod], "Home", lazy.spawn(screenshotRegion), desc="Take region screenshot"),
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "shift"], "q", lazy.shutdown(), desc="Logout / Quit Qtile"),
     Key([mod, "shift"], "r", lazy.reload_config(), desc="Reload the config"),
@@ -66,6 +48,8 @@ keys = [
     Key([mod, "shift"], "Space", toggle_floating_all(), desc="Toggle float/tile for all windows"),
     Key([mod], "f", float_all_windows(), desc="Set all windows to floating"),
     Key([mod], "t", tile_all_windows(), desc="Set all windows to tiled"),
+
+# --- Volume / Brightness Keybinds --- #
     Key([], "XF86AudioRaiseVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +2%"), desc="Increase volume"),
     Key([], "XF86AudioLowerVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -2%"), desc="Decrease volume"),
     Key([], "XF86AudioMute", lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle"), desc="Toggle mute"),
@@ -118,7 +102,7 @@ layouts = [
     layout.Spiral(**layout_conf)
 ]
 
-# --- Widget Settings ---
+# --- Widget Settings --- #
 widget_defaults = dict(
     font="Ubuntu Nerd Font Bold",
     fontsize=11,
@@ -127,18 +111,18 @@ widget_defaults = dict(
     foreground=current_theme["foreground"],
 )
 
-# --- Bar ---
+# --- Bar --- #
 screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.Spacer(length=4),
+                widget.Spacer(length=8),
                 widget.GroupBox(
                     fontsize=10,
                     margin_y=3,
                     margin_x=1,
                     padding_y=4,
-                    padding_x=5,
+                    padding_x=6,
                     disable_drag=True,
                     active=current_theme["foreground"],
                     inactive=current_theme["foreground"],
@@ -150,7 +134,7 @@ screens = [
                 ),
                 widget.Spacer(length=4),
                 widget.WindowName(
-                    format=" {name}",
+                    format=" ‣ {name}",
                     max_chars=150,
                     background=current_theme["active"],
                     foreground=current_theme["background"]
@@ -162,29 +146,25 @@ screens = [
                         ["/home/array/.config/qtile/scripts/music.sh"],
                         text=True).strip(),
                 ),
-                widget.CurrentLayoutIcon(
-                    foreground=current_theme["foreground"],
-                    padding=5,
-                    scale=0.4
-                ),
-                widget.CurrentLayout(
-                    padding_y=20
-                ),
-                separator(),
                 widget.ThermalSensor(
                     tag_sensor='Core 0',
-                    format='  {temp:.0f}{unit}'
+                    format='   {temp:.0f}{unit}',
+                    mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('kitty' + ' -e htop')}
                 ),
                 separator(),
                 widget.Memory(
-                    format='  {MemUsed: .0f}{mm}'
+                    format='  {MemUsed: .0f}{mm}',
+                    mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('kitty' + ' -e htop')}
+
                 ),
                 separator(),
                 widget.Volume(
-                    fmt="   {}"
+                    fmt="   {}",
+                    mouse_callbacks = {'Button3': lambda: qtile.cmd_spawn("pavucontrol")},
+                    volume_app = "pavucontrol",
                 ),
                 widget.WidgetBox(
-                    fmt=" • ",
+                    fmt=" ∷ ",
                     text_open=" • ",
                     text_close="  ",
                     close_button_location="right",
@@ -195,7 +175,7 @@ screens = [
                         )
                     ]),
                 widget.Clock(
-                    format="󰥔  %a,  %d      %H:%M"
+                    format="󰥔  %A, %d %b  :  %H:%M"
                 ),
                 widget.Spacer(length=12),
             ],

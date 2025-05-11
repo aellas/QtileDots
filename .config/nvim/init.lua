@@ -12,7 +12,7 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Load plugins
 require("lazy").setup({
-  { "aditya-azad/candle-grey", lazy = false, priority = 1000 },
+  { "AlphaTechnolog/pywal.nvim", lazy = false, priority = 1000 },
   { "NvChad/nvim-colorizer.lua", config = function()
       require("colorizer").setup({
         "*", -- Enable for all file types
@@ -94,7 +94,7 @@ vim.api.nvim_set_keymap("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", { noremap = 
   -- Ensure this closing bracket exists to properly terminate `lazy.setup()`
 vim.api.nvim_set_keymap("n", "<Space>e", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
 -- Set colorscheme
-vim.cmd.colorscheme("candle-grey")
+vim.cmd.colorscheme("pywal")
 
 -- Remove tildes (~) on empty lines
 vim.opt.fillchars = { eob = " " }
