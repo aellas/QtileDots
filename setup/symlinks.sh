@@ -19,7 +19,7 @@ create_symlink() {
 }
 
 # Symlink for specified directories
-for dir in qtile rofi kitty picom dunst fastfetch nvim; do
+for dir in qtile rofi kitty picom dunst fastfetch nvim wal; do
   target="$dotfiles_dir/$dir"
   link="$target_dir/$dir"
   create_symlink "$target" "$link"
